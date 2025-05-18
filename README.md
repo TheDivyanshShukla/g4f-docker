@@ -11,8 +11,8 @@ This project demonstrates how to use `g4f` (a free internet large language model
 1.  **Clone this repository (or create the files manually):**
 
     ```bash
-    git clone <repository_url>
-    cd <repository_directory>
+    git clone https://github.com/TheDivyanshShukla/g4f-docker
+    cd g4f-docker
     ```
 
 2.  **Build the Docker image:**
@@ -41,6 +41,7 @@ This project demonstrates how to use `g4f` (a free internet large language model
     client = ChatOpenAI(
         base_url="http://localhost:2400/v1",
         model="gpt-4o",  # Or any other model supported by g4f
+        api_key="Anything just don't let it be empty"
     )
 
     # Create a chat completion request
