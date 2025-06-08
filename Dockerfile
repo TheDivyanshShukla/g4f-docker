@@ -4,7 +4,7 @@ FROM python:3.10.10
 WORKDIR /app
 
 # Install g4f and FastAPI-related dependencies
-RUN pip install g4f==0.5.2.1 \
+RUN pip install -U g4f\
     && pip install uvicorn python-multipart fastapi
 
 # Copy the rest of the application code
